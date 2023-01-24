@@ -57,5 +57,9 @@ Nota: es más fácil de evidenciar las diferencias con un documento más extenso
 
 7. Regresese al directorio anterior, utilizando el comando cd y cree una carpeta que se llame Notas.
 `cd ../`
+`mkdir Notas`
 
+## Uso de comandos básicos para edición, manipulación y procesamiento de texto
+
+Comando
 

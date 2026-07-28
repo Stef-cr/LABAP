@@ -1,0 +1,39 @@
+flowchart TD
+    A[Sample collection and fungal isolation] --> B[DNA extraction and QC]
+    B --> C[Illumina NovaSeq X Plus PE150 sequencing]
+    C --> D[Trim Galore v0.4.3<br/>Q20, min 20 bp, clip R1 10 bp, R2 5 bp]
+    D --> E[FastQC v0.11.9]
+    E --> F[SPAdes v3.11.0<br/>k=89,95,97,101,107,117,127]
+    F --> G[MeDuSa v1.6 scaffolding<br/>Reference: P. wereldwijsianum GCA_036250105.1]
+    G --> H[Final MA12 assembly]
+
+    H --> I[BBMap v37.36<br/>N50, L50, GC]
+    H --> J[BUSCO v5.4.3<br/>fungi, ascomycota, hypocreales odb10]
+    H --> K[AUGUSTUS v3.3<br/>F. graminearum model]
+
+    K --> L[Predicted proteins]
+    L --> M[EggNOG-mapper v2.1.6]
+    M --> N[Functional annotation and CAZyme comparison]
+    K --> O[antiSMASH v8.0 web]
+    O --> P[Biosynthetic gene clusters]
+
+    L --> Q[OrthoFinder v2.5.2<br/>Representative Sordariomycetes]
+    Q --> R[Single-copy orthologs]
+    R --> S[Multiple sequence alignments]
+    S --> T[Concatenated supermatrix]
+    T --> U[IQ-TREE v3.0.1<br/>Q.INSECT+F+I+R4<br/>1000 UFBoot + 1000 SH-aLRT]
+    U --> V[Phylogenomic placement]
+
+    H --> W[gANI v1.0.0]
+    H --> X[GGDC 3.0 web<br/>Formula 2]
+    H --> Y[MUMmer v4.0.0beta1]
+    Y --> Z[Whole-genome synteny and R dotplot]
+
+    AA[P. wereldwijsianum assembly] --> W
+    AA --> X
+    AA --> Y
+
+    W --> AB[Genomic delimitation]
+    X --> AB
+    V --> AC[Genome-wide validation of closest relative]
+    Z --> AC

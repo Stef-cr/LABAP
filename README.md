@@ -35,3 +35,9 @@ This branch contains the following tools: 1. An automated batch-processing pipel
 
 
 ## Reproducibility notes
+
+## MIT License
+#Copyright (c) [2025] Stefany Solano-Gonzalez
+#Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+#documentation files (the “Software”), to deal in the Software for educational purposes only. You must give
+#author appropriate credit, provide a link to the license and source, and indicate if changes were made.

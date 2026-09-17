@@ -1,4 +1,5 @@
 # Pipelines automatizados del Laboratorio de Bioinformática Aplicada (LABAP)
+# Automated pipelines of the Laboratorio de Bioinformática Aplicada (LABAP)
 
 ## Overview
 

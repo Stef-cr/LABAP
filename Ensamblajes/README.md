@@ -2,3 +2,19 @@
 Este repositorio contiene un flujo de trabajo (pipeline) bioinformático estandarizado diseñado para procesar datos de secuenciación masiva y transformarlos en genomas ensamblados y funcionalmente anotados. El script está estructurado y optimizado para ejecutarse en entornos de computación de alto rendimiento (HPC), específicamente en el supercomputador Kabré, haciendo uso del gestor de tareas SLURM.
 
 ​El objetivo de este flujo es tomar lecturas crudas de ADN, limpiar su ruido técnico, ensamblarlas de novo en secuencias continuas y predecir sus estructuras biológicas. El proceso incluye la identificación de genes codificantes, la búsqueda de ARN no codificante (ARNt y ARNr), la clasificación de enzimas CAZymes y la evaluación integral de la completitud genómica y similitud estructural.
+
+# 1. PROCESO DE ENSAMBLAJE DE GENOMA
+
+# 2. EJECUTAR TRIMGALORE
+
+# 3. USAR SPADES
+
+# 4. USAR MEDUSA
+
+# 5. EJECUTAR BUSCO
+
+# 6. EJECUTAR AUGUSTUS
+
+# 7. EJECUTAR STRUCTURAL
+
+# REALIZAR COMPROBACIÓN
